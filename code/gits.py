@@ -11,7 +11,7 @@ from gits_setupstream import upstream
 from gits_create_branch import create_branch
 from gits_super_reset import super_reset
 from gits_init import gits_init_func
-from gits_branch import gits_branch_func
+from gits_all_branch import gits_all_branch_func
 
 from gits_rebase import gits_rebase
 from gits_reset import gits_reset
@@ -94,9 +94,8 @@ gits_reset_subparser.add_argument('--branch', required=True, help='branch to be 
 gits_set_subparser = subparsers.add_parser('init', help='Initialize local git repository')
 gits_set_subparser.set_defaults(func=gits_init_func)
 
-gits_super_reset_subparser = subparsers.add_parser('branch')
-gits_super_reset_subparser.set_defaults(func=gits_branch_func)
-#gits_super_reset_subparser.add_argument('-a', required=True, help="List the branches")
+gits_super_reset_subparser = subparsers.add_parser('all-branch')
+gits_super_reset_subparser.set_defaults(func=gits_all_branch_func)
 
 
 args = parser.parse_args()
