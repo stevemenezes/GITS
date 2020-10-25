@@ -12,6 +12,7 @@ def gits_branch_func(args):
         subprocess_command.append("git")
         subprocess_command.append("branch")
         subprocess_command.append("-a")
+        print(args)
         process = Popen(subprocess_command, stdout=PIPE, stderr=PIPE)
         stdout, stderr = process.communicate()
         stdout = stdout.decode("utf-8")
