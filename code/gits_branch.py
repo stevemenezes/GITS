@@ -2,7 +2,7 @@
 
 from subprocess import Popen, PIPE
 
-def gits_branch():
+def gits_branch_func():
     """
     Function to list the branches
     """
