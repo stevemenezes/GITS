@@ -98,6 +98,8 @@ gits_set_subparser.set_defaults(func=gits_init_func)
 gits_super_reset_subparser = subparsers.add_parser('all-branch')
 gits_super_reset_subparser.set_defaults(func=gits_all_branch_func)
 
+gits_super_reset_subparser = subparsers.add_parser('remote-branch')
+gits_super_reset_subparser.set_defaults(func=gits_remote_branch_func)
 
 args = parser.parse_args()
 args.func(args)
