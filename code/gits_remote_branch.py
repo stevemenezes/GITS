@@ -12,9 +12,9 @@ def gits_remote_branch_func(args):
         subprocess_command.append("git")
         subprocess_command.append("branch")
         subprocess_command.append("-r")
-        print(args)
         process = Popen(subprocess_command, stdout=PIPE, stderr=PIPE)
         stdout, stderr = process.communicate()
+        print(stdout)
         stdout = stdout.decode("utf-8")
         
         branches = list(filter(None, stdout.split("\n")))
