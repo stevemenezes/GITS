@@ -89,8 +89,8 @@ gits_reset_subparser = subparsers.add_parser('reset', help='sync help')
 gits_reset_subparser.set_defaults(func=gits_reset)
 gits_reset_subparser.add_argument('--branch', required=True, help='branch to be used')
 
-gits_hello_subparser = subparsers.add_parser('push')
-gits_hello_subparser.set_defaults(func=gits_push_func)
+gits_push_subparser = subparsers.add_parser('push')
+gits_push_subparser.set_defaults(func=gits_push_func)
 
 args = parser.parse_args()
 args.func(args)

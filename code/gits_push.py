@@ -18,7 +18,7 @@ def gits_push_func(args):
 
 	except Exception as e:
 		print("ERROR: gits push command caught an exception")
-        print("ERROR: {}".format(str(e)))
+		print("ERROR: {}".format(str(e)))
 
 
 
