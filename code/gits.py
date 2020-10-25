@@ -10,6 +10,7 @@ from gits_set import gits_set_func
 from gits_setupstream import upstream
 from gits_create_branch import create_branch
 from gits_super_reset import super_reset
+from gits_push import gits_push_func
 
 from gits_rebase import gits_rebase
 from gits_reset import gits_reset
@@ -88,6 +89,8 @@ gits_reset_subparser = subparsers.add_parser('reset', help='sync help')
 gits_reset_subparser.set_defaults(func=gits_reset)
 gits_reset_subparser.add_argument('--branch', required=True, help='branch to be used')
 
+gits_hello_subparser = subparsers.add_parser('push')
+gits_hello_subparser.set_defaults(func=gits_push_func)
 
 args = parser.parse_args()
 args.func(args)
