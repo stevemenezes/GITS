@@ -22,4 +22,4 @@ def gits_branch_func():
 
     except Exception as e:
         print("ERROR: gits branch command caught an exception")
-        print("ERROR: {}".format(str(e))
+        print("ERROR: {}".format(str(e)))
