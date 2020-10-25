@@ -95,7 +95,7 @@ gits_set_subparser = subparsers.add_parser('init', help='Initialize local git re
 gits_set_subparser.set_defaults(func=gits_init_func)
 
 gits_super_reset_subparser = subparsers.add_parser('branch')
-#gits_super_reset_subparser.add_argument('-a', required=True, help="List the branches")
+gits_super_reset_subparser.add_argument('-a', required=True, help="List the branches")
 gits_super_reset_subparser.set_defaults(func=gits_branch_func)
 
 args = parser.parse_args()

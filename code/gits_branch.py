@@ -3,7 +3,7 @@
 import gits_logging
 from subprocess import Popen, PIPE
 
-def gits_branch_func():
+def gits_branch_func(args):
     """
     Function to list the branches
     """
@@ -11,7 +11,8 @@ def gits_branch_func():
         subprocess_command = list()
         subprocess_command.append("git")
         subprocess_command.append("branch")
-        subprocess_command.append("-a")
+        command = args.a
+        subprocess_command.append(command)
         process = Popen(subprocess_command, stdout=PIPE, stderr=PIPE)
         stdout, stderr = process.communicate()
         stdout = stdout.decode("utf-8")
