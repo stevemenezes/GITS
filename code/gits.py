@@ -10,6 +10,8 @@ from gits_set import gits_set_func
 from gits_setupstream import upstream
 from gits_create_branch import create_branch
 from gits_super_reset import super_reset
+from gits_init import gits_init_func
+from gits_branch import gits_branch_func
 
 from gits_rebase import gits_rebase
 from gits_reset import gits_reset
