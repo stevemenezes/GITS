@@ -15,6 +15,7 @@ def gits_init_func(args):
         process = Popen(subprocess_command, stdout=PIPE, stderr=PIPE)
         stdout, stderr = process.communicate()
         print(stdout)
+        print(stdout == b'')
         stdout = stdout.decode("utf-8")
         print(stdout)
 
