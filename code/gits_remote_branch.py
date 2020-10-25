@@ -3,15 +3,15 @@
 import gits_logging
 from subprocess import Popen, PIPE
 
-def gits_all_branch_func(args):
+def gits_remote_branch_func(args):
     """
-    Function to list all the branches
+    Function to list the branches
     """
     try:
         subprocess_command = list()
         subprocess_command.append("git")
         subprocess_command.append("branch")
-        subprocess_command.append("-a")
+        subprocess_command.append("-r")
         print(args)
         process = Popen(subprocess_command, stdout=PIPE, stderr=PIPE)
         stdout, stderr = process.communicate()
