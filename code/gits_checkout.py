@@ -17,10 +17,17 @@ def checkout(args):
             # do nothing
             pass
         else:
-            subprocess_command.append(branch_name)
-        process3 = Popen(checkout_feature, stdout=PIPE, stderr=PIPE)
-        stdout, stderr = process3.communicate()
-
+            checkout_feature.append(branch_name)
+        process = Popen(checkout_feature, stdout=PIPE, stderr=PIPE)
+        stdout, stderr = process.communicate()
+        print(stdout.decode('utf-8'))
+        
+        if stderr.decode('utf-8') == "error: pathspec '"+ branch_name +"' did not match any file(s) known to git\n":
+            print(stderr.decode('utf-8'))
+            print(branch_name + " did not match any branches")
+            print("Please give a valid branch name or create a branch using gits create_branch")      
+        else:
+            print(stderr.decode('utf-8'))
     except Exception as e:
         print("ERROR: gits checkout command caught an exception")
         print("ERROR: {}".format(str(e)))
