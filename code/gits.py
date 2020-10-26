@@ -94,7 +94,7 @@ gits_reset_subparser.add_argument('--branch', required=True, help='branch to be 
 
 gits_init_subparser = subparsers.add_parser('init', help='Initialize local git repository')
 gits_init_subparser.add_argument("--bare", action="store_true", help="intialize an empty git repositories but omit the working directory")
-gits_init_subparser.add_argument("--clone_url", help="url for cloning an already existing repo")
+gits_init_subparser.add_argument("--url", help="url for cloning an already existing repo")
 gits_init_subparser.set_defaults(func=gits_init_func)
 
 gits_all_branch_subparser = subparsers.add_parser('all-branch')
