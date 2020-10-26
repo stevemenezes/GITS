@@ -8,6 +8,7 @@ def unstage(args):
     """
     Function that moves files from staging area to the working directory.
     Untracked files will not be considered for the upcoming commits.
+    
     """
 
     try:
@@ -28,7 +29,7 @@ def unstage(args):
         gits_logging.gits_logger.error("Unstage command caught an exception")
         gits_logging.gits_logger.error("{}".format(str(e)))
         print("ERROR: gits Unstage command caught an exception")
-        print("ERROR: {}"..format(str(e)))
+        print("ERROR: {}".format(str(e)))
         return False
     
     return True

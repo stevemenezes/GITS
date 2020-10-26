@@ -92,7 +92,7 @@ gits_add_subparser = subparsers.add_parser('checkout')
 gits_add_subparser.add_argument('branch_name')
 gits_add_subparser.set_defaults(func=checkout)
 
-gits_add_subparser = subparsers.add_parser('untrack')
+gits_add_subparser = subparsers.add_parser('unstage')
 gits_add_subparser.add_argument('file_names',
                                 metavar='N',
                                 type=str,
