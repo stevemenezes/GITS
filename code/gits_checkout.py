@@ -3,9 +3,9 @@ from subprocess import Popen, PIPE
 
 def checkout(args):
     """
-    Function that creates a new local branch
-    from local master after updating local master
-    from remote master. The idea here is that the new branch should have all the latest commits.
+    Function that checks out to the branch
+    specified. Gives error and suggests to
+    create the branch if not found
     """
     try:
         # checkout to given branch
@@ -23,7 +23,7 @@ def checkout(args):
         print(stdout.decode('utf-8'))
         
         if stderr.decode('utf-8') == "error: pathspec '"+ branch_name +"' did not match any file(s) known to git\n":
-            print(stderr.decode('utf-8'))
+            #print(stderr.decode('utf-8'))
             print(branch_name + " did not match any branches")
             print("Please give a valid branch name or create a branch using gits create_branch")      
         else:
