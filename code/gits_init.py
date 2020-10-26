@@ -25,9 +25,10 @@ def gits_init_func(args):
         stderr = stderr.decode("utf-8")
         print(stdout)
         print(stderr)
+        print(len(stdout))
         print(len(stderr))
         stderr = stderr.replace(" ","")
-        if not stderr:
+        if not stdout:
             print("Yes")
         else:
             print("No")
