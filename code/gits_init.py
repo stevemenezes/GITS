@@ -21,17 +21,8 @@ def gits_init_func(args):
         # print(subprocess_command)
         process = Popen(subprocess_command, stdout=PIPE, stderr=PIPE)
         stdout, stderr = process.communicate()
-        stdout = stdout.decode("utf-8")
         stderr = stderr.decode("utf-8")
-        print(stdout)
         print(stderr)
-        print(len(stdout))
-        print(len(stderr))
-        stderr = stderr.replace(" ","")
-        if not stdout:
-            print("Yes")
-        else:
-            print("No")
 
     except Exception as e:
         print("ERROR: gits init command caught an exception")
