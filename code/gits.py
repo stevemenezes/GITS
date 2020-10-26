@@ -13,7 +13,7 @@ from gits_super_reset import super_reset
 from gits_checkout import checkout
 from gits_rebase import gits_rebase
 from gits_reset import gits_reset
-
+from gits_unstage import unstage
 from gits_profile import gits_set_profile
 from gits_pr_update import gits_pr_update_func
 
@@ -91,6 +91,14 @@ gits_reset_subparser.add_argument('--branch', required=True, help='branch to be 
 gits_add_subparser = subparsers.add_parser('checkout')
 gits_add_subparser.add_argument('branch_name')
 gits_add_subparser.set_defaults(func=checkout)
+
+gits_add_subparser = subparsers.add_parser('untrack')
+gits_add_subparser.add_argument('file_names',
+                                metavar='N',
+                                type=str,
+                                nargs='+',
+                                help='all file names')
+gits_add_subparser.set_defaults(func=unstage)
 
 args = parser.parse_args()
 args.func(args)

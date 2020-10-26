@@ -1,6 +1,5 @@
 from subprocess import Popen, PIPE
 
-
 def checkout(args):
     """
     Function that checks out to the branch
