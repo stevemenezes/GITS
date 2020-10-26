@@ -16,7 +16,7 @@ def gits_init_func(args):
         else:
             subprocess_command.append("git")
             subprocess_command.append("init")
-            if args.bare is True:
+            if args.bare is not False:
                 subprocess_command.append("--bare")
         # print(subprocess_command)
         process = Popen(subprocess_command, stdout=PIPE, stderr=PIPE)
