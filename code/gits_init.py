@@ -25,6 +25,8 @@ def gits_init_func(args):
         stderr = stderr.decode("utf-8")
         print(stdout)
         print(stderr)
+        if stderr == b'':
+            print('Yes')
 
     except Exception as e:
         print("ERROR: gits init command caught an exception")
