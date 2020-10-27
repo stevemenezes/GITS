@@ -14,7 +14,14 @@
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/bhavesh242/GITS)
 ![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/bhavesh242/GITS)
 
-
+### Installation Guidelines:
+1. Clone the GITS repository <br/>
+2. Navigate inside GITS folder and enter the following command: <br/> `pip install -r requirements.txt` <br/>
+3. Navigate inside the configurations folder and run the folllowing commands: <br/> 
+`chmod +x project_init.sh` <br/> 
+`./project_init.sh` <br/> 
+`source .bashrc` <br/>
+4. Run `gits hello_world` from any directory. If you end up getting a welcome msg you're good to go! <br/>
 
 ### Supported functionality
 
