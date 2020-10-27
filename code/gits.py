@@ -21,6 +21,7 @@ from gits_profile import gits_set_profile
 from gits_pr_update import gits_pr_update_func
 from gits_status import gits_status
 from gits_diff import gits_diff
+from gits_sync import gits_sync
 
 logger_status = init_gits_logger()
 if not logger_status:
@@ -110,6 +111,9 @@ gits_status_subparser.set_defaults(func=gits_status)
 
 gits_diff_subparser=subparsers.add_parser('diff')
 gits_diff_subparser.set_defaults(func=gits_diff)
+
+gits_sync_subparser=subparsers.add_parser('sync')
+gits_sync_subparser.set_defaults(func=gits_sync)
 
 
 
