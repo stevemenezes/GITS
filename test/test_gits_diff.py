@@ -1,3 +1,8 @@
+import os
+import sys
+sys.path.insert(1, os.getcwd())
+
+
 import argparse
 import gits_diff
 from mock import patch, Mock
