@@ -6,7 +6,7 @@
 [![Build Status](https://travis-ci.com/amolgautam25/GITS.svg?branch=master)](https://travis-ci.com/bhavesh242/GITS)
 ![GitHub](https://img.shields.io/badge/language-python-blue.svg)
 ![GitHub](https://img.shields.io/badge/language-shell-orange.svg)
-[![DOI](https://zenodo.org/badge/302457130.svg)](https://zenodo.org/badge/302457130)
+[![DOI](https://zenodo.org/badge/302457130.svg)](https://zenodo.org/badge/latestdoi/302457130)
 
 ![GitHub issues](https://img.shields.io/github/issues/bhavesh242/GITS)
 ![GitHub closed issues](https://img.shields.io/github/issues-closed/bhavesh242/GITS)
