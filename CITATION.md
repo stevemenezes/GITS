@@ -1,11 +1,11 @@
 Cite as
 
-Tanay Agrawal, Amol Gautam, & Sneha192. (2020, August 16). amolgautam25/se20_group17: Initial Commit (Version v1). Zenodo.https://doi.org/10.5281/zenodo.4029213
+Bhavesh Shailesh Agrawal, Steve Menezes, Nikitha Thotireddy, Aadil Anwar Khan & Durga Devi Mummadi. (2020, October 26).
 
 ```
-@article{amolgautam25:GITS,
-  title     = {se20_group17: Initial Commit (Version v1)},
-  DOI       = {10.5281/zenodo.4029213}, 
+@article{bhavesh242:GITS,
+  title     = {se20_group15: Project 2, GITS},
+  DOI       = {10.5281/zenodo.4136759}, 
   author    = {Tanay Agrawal, Amol Gautam, & Sneha192}, 
   publisher = {Zenodo}, 
   year      = {2020}, 
