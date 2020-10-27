@@ -57,9 +57,9 @@ This command lists all the branches on remote repository.
 
 #### gits init
 Function that creates an empty Git repository or re-initializes an existing one. There are three versions of this function, 
-* `gits init --url='cloning url': Clones the repository at url at current directory
-* `gits init: This variant creates a repository with a working directory so you can actually work 
-* `gits init --bare: This variant creates a repository without a working directory
+* `gits init --url='cloning url': Clones the repository at url at current directory`
+* `gits init: This variant creates a repository with a working directory so you can actually work`
+* `gits init --bare: This variant creates a repository without a working directory`
 
 #### gits logging
 This logs all the commands executed by the user, and also stores the output of each command
@@ -83,8 +83,8 @@ This repository is made for CSC 510 Software Engineering Course at NC State Univ
 
 Group 15 Team Members: 
 
-Steve Victor Menezes
-Durga Devi Mummadi
-Bhavesh Shailesh Agrawal
-Nikitha Thotireddy
-Aadil Anwar Khan
+* Steve Victor Menezes
+* Durga Devi Mummadi
+* Bhavesh Shailesh Agrawal
+* Nikitha Thotireddy
+* Aadil Anwar Khan
