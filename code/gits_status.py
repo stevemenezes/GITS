@@ -3,8 +3,7 @@ from subprocess import Popen, PIPE
 
 def gits_status(args):
 	"""
-	Function to display the state of the working directory 
-	and the staging area.
+	Function to display the state of the working directory and the staging area.
 	This function is similar to the git status command.
 	"""
 	print("Welcome to gits status")

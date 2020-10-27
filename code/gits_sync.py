@@ -4,8 +4,8 @@ from subprocess import Popen, PIPE
 
 def get_trunk_branch(args):
     """
-    Function to return trunk branch
-    """
+    Function to return the trunk branch.
+	"""
     try:
         subprocess_command = list()
         subprocess_command.append("git")
@@ -23,6 +23,9 @@ def get_trunk_branch(args):
         print("ERROR: {}".format(str(e)))
 
 def get_cur_branch(args):
+	"""
+	Function to get the current branch
+	"""
 	try:
 		subprocess_git_branch=list()
 		subprocess_git_branch.append("git")
@@ -40,6 +43,10 @@ def get_cur_branch(args):
 		print("ERROR: {}".format(str(e)))
         	
 def gits_sync(args):
+	"""
+	Function to sync local master with remote master and rebases the current branch with remote branch branch.
+    Used when we want to go back to its stable state. Function is similar to git sync
+	"""
 	print("Starting to sync...")
 	try:
 

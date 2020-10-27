@@ -7,8 +7,7 @@ from pathlib import Path
 
 def gits_set_func(args):
     """
-    Function that is used to set important
-    environment variables
+    Function that is used to set important environment variables
     """
     try:
         if args.parent:

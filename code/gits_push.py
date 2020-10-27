@@ -2,6 +2,10 @@ import gits_logging
 from subprocess import Popen, PIPE
 
 def gits_push_func(args):
+	"""
+	Function to upload local repository content to a remote repository. 
+	Function similar to git push command.
+	"""
 	print ('Welcome to gits push')
 	try:
 		subprocess_command = list()

@@ -9,8 +9,7 @@ gits_logger = None
 
 def init_gits_logger():
     """
-    Function that initializes gits logger and creates a
-    handler to be used consequently
+    Function that initializes gits logger and creates handler to be used consequently
     """
     try:
         global gits_logger

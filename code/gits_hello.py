@@ -3,8 +3,7 @@ import gits_logging
 
 def gits_hello_world(args):
     """
-    Function that prints hello message
-    to user console
+    Function that prints hello message to user console
     """
     print("Hello from GITS Commandline Tools")
     gits_logging.gits_logger.info("Hello from GITS Commandline Tools")
