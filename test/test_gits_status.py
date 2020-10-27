@@ -22,4 +22,4 @@ def test_gits_status_happy(mock_var, mock_args):
     mock_var.return_value = mocked_obj
     mock_args = parse_args(mock_args)
     test_result = gits_status.gits_status(mock_args)
-    assert True == test_result, "Base Case"
+    assert True == test_result
