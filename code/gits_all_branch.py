@@ -5,7 +5,9 @@ from subprocess import Popen, PIPE
 
 def gits_all_branch_func(args):
     """
-    Function to list all the branches
+    Function to list all the branches.
+    Performs operation as similar to git
+    branch command
     """
     try:
         subprocess_command = list()
