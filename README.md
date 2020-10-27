@@ -18,9 +18,9 @@
 1. Clone the GITS repository <br/>
 2. Navigate inside GITS folder and enter the following command: <br/> `pip install -r requirements.txt` <br/>
 3. Navigate inside the configurations folder and run the folllowing commands: <br/> 
-`chmod +x project_init.sh` <br/> 
-`./project_init.sh` <br/> 
-`source .bashrc` <br/>
+- `chmod +x project_init.sh` <br/> 
+- `./project_init.sh` <br/> 
+- `source .bashrc` <br/>
 4. Run `gits hello_world` from any directory. If you end up getting a welcome msg you're good to go! <br/>
 
 ### Supported functionality
@@ -91,6 +91,20 @@ For example if you want to go through all the documentation for all files in cod
 `python3 -m pydoc -b `
 
 This will open up a browser and you can see all the files. You can click on a particular file to access the documentation associated with that file.
+
+## Style Checker and Analyzer
+We are using flake9 as our style checker and code analyzer. While contrivuting to this project, make sure you conform to norms dictated by flake8
+### Flake8 
+<b>Installation</b>
+- `python<version> -m pip install flake8`
+
+If you want Flake8 to be installed for your default Python installation, you can instead use:
+- `python -m pip install flake8`
+
+ <b>Using Flake8</b> 
+ <br/>To start using Flake8, open an interactive shell and run one of the following,
+- `flake8 path/to/code/to/check.py`
+- `flake8 path/to/code/`
 
 This repository is made for CSC 510 Software Engineering Course at NC State University.
 
