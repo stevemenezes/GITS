@@ -24,3 +24,6 @@ def gits_status(args):
 	except Exception as e:
 		print("ERROR: gits status did not run correctly")
 		print("ERROR: {}".format(str(e)))
+		return False
+	
+	return True
