@@ -26,3 +26,6 @@ def gits_remote_branch_func(args):
     except Exception as e:
         print("ERROR: gits branch command caught an exception")
         print("ERROR: {}".format(str(e)))
+        return False
+    
+    return True
