@@ -5,7 +5,9 @@ from subprocess import Popen, PIPE
 
 def gits_remote_branch_func(args):
     """
-    Function to list the branches
+    Function to list the branches in remote branch
+    Performs operation as similar to git
+    branch -r command
     """
     try:
         subprocess_command = list()
