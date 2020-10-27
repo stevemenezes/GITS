@@ -8,7 +8,6 @@ def unstage(args):
     """
     Function that moves files from staging area to the working directory.
     Untracked files will not be considered for the upcoming commits.
-    
     """
 
     try:

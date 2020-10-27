@@ -3,7 +3,7 @@ import sys
 sys.path.insert(1, os.getcwd())
 
 import argparse
-import gits_status
+import gits_remote_branch
 from mock import patch, Mock
 
 def parse_args(args):
@@ -12,7 +12,7 @@ def parse_args(args):
 
 @patch("argparse.ArgumentParser.parse_args",return_value=argparse.Namespace())
 @patch("subprocess.Popen")
-def test_gits_status_happy(mock_var, mock_args):
+def test_gits_remote_branch_happy(mock_var, mock_args):
     """
     Git Status Success Case  
     """
@@ -21,5 +21,5 @@ def test_gits_status_happy(mock_var, mock_args):
     mocked_obj.configure_mock(**attrs)
     mock_var.return_value = mocked_obj
     mock_args = parse_args(mock_args)
-    test_result = gits_status.gits_status(mock_args)
+    test_result = gits_remote_branch.gits_remote_branch_func(mock_args)
     assert True == test_result
