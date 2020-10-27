@@ -3,20 +3,17 @@
 ### GIT Simplified
 
 ![GitHub](https://img.shields.io/github/license/amolgautam25/GITS)
-[![Build Status](https://travis-ci.com/amolgautam25/GITS.svg?branch=master)](https://travis-ci.com/amolgautam25/GITS)
+[![Build Status](https://travis-ci.com/amolgautam25/GITS.svg?branch=master)](https://travis-ci.com/bhavesh242/GITS)
 ![GitHub](https://img.shields.io/badge/language-python-blue.svg)
 ![GitHub](https://img.shields.io/badge/language-shell-orange.svg)
-![YouTube Video Views](https://img.shields.io/youtube/views/cMcftHMtIZ4?style=social)
+[![DOI](https://zenodo.org/badge/302457130.svg)](https://zenodo.org/badge/latestdoi/302457130)
 
-[![DOI](https://zenodo.org/badge/295480790.svg)](https://zenodo.org/badge/latestdoi/295480790)
+![GitHub issues](https://img.shields.io/github/issues/bhavesh242/GITS)
+![GitHub closed issues](https://img.shields.io/github/issues-closed/bhavesh242/GITS)
 
-![GitHub issues](https://img.shields.io/github/issues/amolgautam25/GITS)
-![GitHub closed issues](https://img.shields.io/github/issues-closed/amolgautam25/GITS)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/bhavesh242/GITS)
+![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/bhavesh242/GITS)
 
-![GitHub pull requests](https://img.shields.io/github/issues-pr/amolgautam25/GITS)
-![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/amolgautam25/GITS)
-
-[![](https://img.youtube.com/vi/cMcftHMtIZ4/0.jpg)](https://youtu.be/cMcftHMtIZ4 "GITS demo")
 
 
 ### Supported functionality
@@ -51,8 +48,30 @@ It is a highly simplified version of git commit command. We are actively working
 #### gits create_branch
 This automatically checks out a new branch from local master , after pulling all the changes from the remote master to local master. The idea behind this is that this new branch should have all the latest commits before a developer starts working on them.
 
+#### gits all-branch
+This command lists all the branches on both local and remote repositories.
+
+#### gits remote-branch
+This command lists all the branches on remote repository.
+
+#### gits init
+Function that creates an empty Git repository or re-initializes an existing one. There are three versions of this function, 
+* `gits init --url='cloning url': Clones the repository at url at current directory`
+* `gits init: This variant creates a repository with a working directory so you can actually work`
+* `gits init --bare: This variant creates a repository without a working directory`
+
 #### gits logging
 This logs all the commands executed by the user, and also stores the output of each command
+
+#### gits push
+This pushes all the local changes of origin to the branch specified. 
+
+#### gits checkout
+This command switches between two branches. The function takes branch name as input and returns True for successful execution or False otherwise with an exception.
+
+#### gits unstage
+This command moves files from staging area to the working directory. These untracked files will not be considered for the upcoming commits. The function filenames as input to move from staging area to working directory and returns True for successful execution or False with an exception.
+
 
 Note: More functionality are being added to this project. Please refer to the 'issues' tab for more information. In case you want to contribute to this project , please refer to 'Contributing.md' file.
 
@@ -68,10 +87,10 @@ This will open up a browser and you can see all the files. You can click on a pa
 
 This repository is made for CSC 510 Software Engineering Course at NC State University.
 
-Group 17 Team Members: 
+Group 15 Team Members: 
 
-Amol Gautam  
-Sneha Kumar  
-Sreeraksha Mavinhally Sreekantha  
-Srujana Rachakonda  
-Tanay Agarwal
+* Steve Victor Menezes
+* Durga Devi Mummadi
+* Bhavesh Shailesh Agrawal
+* Nikitha Thotireddy
+* Aadil Anwar Khan

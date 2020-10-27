@@ -37,6 +37,8 @@ def create_branch(args):
         process3 = Popen(checkout_feature, stdout=PIPE, stderr=PIPE)
         stdout, stderr = process3.communicate()
 
+        process1 = Popen(checkout_master, stdout=PIPE, stderr=PIPE)
+        stdout, stderr = process1.communicate()
     except Exception as e:
         print("ERROR: gits create command caught an exception")
         print("ERROR: {}".format(str(e)))
