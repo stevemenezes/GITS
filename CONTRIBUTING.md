@@ -42,3 +42,17 @@ Bugs are tracked as GitHub issues. You need to create an issue and include all t
 4. Describe the current behavior and explain which behavior you expected to see instead and why.
 5. Explain why this enhancement would be useful to most users and isn't something that can or should be implemented as a community package.
 6. List some other repo or applications where this enhancement / feature exists. ( this is optional )
+
+ 
+## Style Checker and Analyzer
+We are using flake9 as our style checker and code analyzer. While contrivuting to this project, make sure you conform to norms dictated by flake8
+### Flake8 
+<b>Installation</b>
+- `python<version> -m pip install flake8`
+If you want Flake8 to be installed for your default Python installation, you can instead use:
+-`python -m pip install flake8`
+
+ <b>Running Standard Js</b> 
+ - go to root of project and type `standard` if StandardJs is installed globally
+ - go to root of project and type `npx standard` if StandardJs is installed locally 
+ - Instead of installing it using npm, you can also use the extension available on VS Code
