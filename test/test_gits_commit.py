@@ -1,7 +1,10 @@
 import argparse
+import os
+import sys
+sys.path.insert(1, os.getcwd())
+
 import gits_commit
 from mock import patch
-
 
 @patch("argparse.ArgumentParser.parse_args",
        return_value=argparse.Namespace(m="test_commit", amend=True))
