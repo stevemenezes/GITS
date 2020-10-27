@@ -49,10 +49,11 @@ We are using flake9 as our style checker and code analyzer. While contrivuting t
 ### Flake8 
 <b>Installation</b>
 - `python<version> -m pip install flake8`
-If you want Flake8 to be installed for your default Python installation, you can instead use:
+<br/>If you want Flake8 to be installed for your default Python installation, you can instead use:
 -`python -m pip install flake8`
 
- <b>Running Standard Js</b> 
- - go to root of project and type `standard` if StandardJs is installed globally
- - go to root of project and type `npx standard` if StandardJs is installed locally 
- - Instead of installing it using npm, you can also use the extension available on VS Code
+ <b>Using Flake8</b> 
+ <br/>To start using Flake8, open an interactive shell and run one of the following,
+- `flake8 path/to/code/to/check.py`
+- `flake8 path/to/code/`
+
