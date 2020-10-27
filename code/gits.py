@@ -13,13 +13,14 @@ from gits_super_reset import super_reset
 from gits_init import gits_init_func
 from gits_all_branch import gits_all_branch_func
 from gits_remote_branch import gits_remote_branch_func
-
+from gits_checkout import checkout
 from gits_rebase import gits_rebase
 from gits_reset import gits_reset
-
+from gits_unstage import unstage
 from gits_profile import gits_set_profile
 from gits_pr_update import gits_pr_update_func
-
+from gits_status import gits_status
+from gits_diff import gits_diff
 
 logger_status = init_gits_logger()
 if not logger_status:
@@ -43,6 +44,7 @@ gits_add_subparser.add_argument('file_names',
                                 nargs='+',
                                 help='all file names')
 gits_add_subparser.set_defaults(func=gits_add_func)
+
 
 gits_commit_subparser = subparsers.add_parser('commit')
 gits_commit_subparser.add_argument('-m',
@@ -90,6 +92,25 @@ gits_rb_subparser.set_defaults(func=gits_rebase)
 gits_reset_subparser = subparsers.add_parser('reset', help='sync help')
 gits_reset_subparser.set_defaults(func=gits_reset)
 gits_reset_subparser.add_argument('--branch', required=True, help='branch to be used')
+
+gits_add_subparser = subparsers.add_parser('checkout')
+gits_add_subparser.add_argument('branch_name')
+gits_add_subparser.set_defaults(func=checkout)
+
+gits_add_subparser = subparsers.add_parser('unstage')
+gits_add_subparser.add_argument('file_names',
+                                metavar='N',
+                                type=str,
+                                nargs='+',
+                                help='all file names')
+gits_add_subparser.set_defaults(func=unstage)
+
+gits_status_subparser=subparsers.add_parser('status')
+gits_status_subparser.set_defaults(func=gits_status)
+
+gits_diff_subparser=subparsers.add_parser('diff')
+gits_diff_subparser.set_defaults(func=gits_diff)
+
 
 
 gits_init_subparser = subparsers.add_parser('init', help='Initialize local git repository')
