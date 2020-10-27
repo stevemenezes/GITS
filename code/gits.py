@@ -10,6 +10,9 @@ from gits_set import gits_set_func
 from gits_setupstream import upstream
 from gits_create_branch import create_branch
 from gits_super_reset import super_reset
+from gits_init import gits_init_func
+from gits_all_branch import gits_all_branch_func
+from gits_remote_branch import gits_remote_branch_func
 from gits_checkout import checkout
 from gits_rebase import gits_rebase
 from gits_reset import gits_reset
@@ -109,6 +112,17 @@ gits_diff_subparser=subparsers.add_parser('diff')
 gits_diff_subparser.set_defaults(func=gits_diff)
 
 
+
+gits_init_subparser = subparsers.add_parser('init', help='Initialize local git repository')
+gits_init_subparser.add_argument("--bare", action="store_true", help="Omit the working directory and initialize an empty git repository")
+gits_init_subparser.add_argument("--url", help="url for cloning an already existing repo")
+gits_init_subparser.set_defaults(func=gits_init_func)
+
+gits_all_branch_subparser = subparsers.add_parser('all-branch')
+gits_all_branch_subparser.set_defaults(func=gits_all_branch_func)
+
+gits_remote_branch_subparser = subparsers.add_parser('remote-branch')
+gits_remote_branch_subparser.set_defaults(func=gits_remote_branch_func)
 
 args = parser.parse_args()
 args.func(args)
