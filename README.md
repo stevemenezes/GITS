@@ -51,7 +51,6 @@ This automatically checks out a new branch from local master , after pulling all
 #### gits all-branch
 This command lists all the branches on both local and remote repositories.
 
-
 #### gits remote-branch
 This command lists all the branches on remote repository.
 
@@ -66,6 +65,13 @@ This logs all the commands executed by the user, and also stores the output of e
 
 #### gits push
 This pushes all the local changes of origin to the branch specified. 
+
+#### gits checkout
+This command switches between two branches. The function takes branch name as input and returns True for successful execution or False otherwise with an exception.
+
+#### gits unstage
+This command moves files from staging area to the working directory. These untracked files will not be considered for the upcoming commits. The function filenames as input to move from staging area to working directory and returns True for successful execution or False with an exception.
+
 
 Note: More functionality are being added to this project. Please refer to the 'issues' tab for more information. In case you want to contribute to this project , please refer to 'Contributing.md' file.
 
