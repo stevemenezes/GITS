@@ -25,7 +25,7 @@ def test_gits_commit_func_1(mock_var, mock_args):
 
     mock_args = parse_args(mock_args)
     test_result = gits_commit.gits_commit_func(mock_args)
-    assert True == test_result, "Normal case"
+    assert True == test_result, "success case"
 
 
 @patch("argparse.ArgumentParser.parse_args",
@@ -59,7 +59,7 @@ def test_gits_commit_func_3(mock_var, mock_args):
 
     mock_args = parse_args(mock_args)
     test_result = gits_commit.gits_commit_func(mock_args)
-    assert True == test_result, "Ammed is false"
+    assert True == test_result, "Amend is false"
 
 
 @patch("argparse.ArgumentParser.parse_args",
@@ -76,4 +76,4 @@ def test_gits_commit_func_4(mock_var, mock_args):
 
     mock_args = parse_args(mock_args)
     test_result = gits_commit.gits_commit_func(mock_args)
-    assert False == test_result, "Empty commit message, ammend is true"
+    assert False == test_result, "Empty commit message, amend is true"

@@ -26,7 +26,7 @@ def test_gits_stage(mock_var, mock_args):
 
     mock_args = parse_args(mock_args)
     test_result = unstage(mock_args)
-    assert True == test_result, "Normal case"
+    assert True == test_result, "Success case"
 
 
 @patch("argparse.ArgumentParser.parse_args",
@@ -55,4 +55,4 @@ def test_gits_unstage_happy_case_no_files(mock_var, mock_args):
 
     mock_args = parse_args(mock_args)
     test_result = unstage(mock_args)
-    assert True == test_result, "Normal case"
+    assert True == test_result, "success case"

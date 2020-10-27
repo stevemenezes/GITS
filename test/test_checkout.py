@@ -27,7 +27,7 @@ def test_gits_checkout_happy_case(mock_var, mock_args):
 
     mock_args = parse_args(mock_args)
     test_result = checkout(mock_args)
-    assert True == test_result, "Normal case"
+    assert True == test_result, "Success case"
 
 
 @patch("argparse.ArgumentParser.parse_args",
@@ -44,4 +44,4 @@ def test_gits_checkout_sad_case(mock_var, mock_args):
 
     mock_args = parse_args(mock_args)
     test_result = checkout(mock_args)
-    assert False == test_result, "Normal case"
+    assert False == test_result, "Success case"
