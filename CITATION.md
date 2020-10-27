@@ -1,14 +1,17 @@
-Cite as
+# Cite as ...
 
-Bhavesh Shailesh Agrawal, Steve Menezes, Nikitha Thotireddy, Aadil Anwar Khan & Durga Devi Mummadi. (2020, October 26).
+Group 15,
+Smart Units Converter,
+September 2020
 
-```
-@article{bhavesh242:GITS,
-  title     = {se20_group15: Project 2, GITS},
-  DOI       = {10.5281/zenodo.4136759}, 
-  author    = {Tanay Agrawal, Amol Gautam, & Sneha192}, 
-  publisher = {Zenodo}, 
-  year      = {2020}, 
-  month     = {August}
+```bibtex
+@article{g15:Project 2,
+	title 	  = {GITS : Git Tool},
+	DOI 	  = {10.5281/zenodo.4136759},
+	author    = {Group 15},
+	publisher = {Zenodo},
+	year      = {2020},
+	month     = {October}
 }
 ```
+[![DOI](https://zenodo.org/badge/302457130.svg)](https://zenodo.org/badge/302457130)
