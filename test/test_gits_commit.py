@@ -65,7 +65,7 @@ def test_gits_commit_func_3(mock_var, mock_args):
 @patch("argparse.ArgumentParser.parse_args",
        return_value=argparse.Namespace(amend=False))
 @patch("subprocess.Popen", return_value="dummy")
-def test_gits_commit_func_3(mock_var, mock_args):
+def test_gits_commit_func_4(mock_var, mock_args):
     """
     Function to test gits_add, success case
     """
