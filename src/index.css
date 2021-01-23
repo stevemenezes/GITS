@@ -11,3 +11,61 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+.intro {
+  float: left;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 170%;
+  margin-top: 25%;
+  margin-left: 12.5%;
+  text-align: left;
+  padding-left: 5%;
+}
+
+.mobilePhone{ 
+  width: 50%;
+  margin-top: 7%;
+  float: 'right'; 
+}
+
+.whycarefiler{
+  margin-top: 2%;
+  padding-top: 2.5%;
+}
+
+.means{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 170%;
+  margin-top: 5%;
+  text-align: center;
+}
+
+.signup{
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 5%;
+  text-align: left;
+  padding-left: 5%;
+}
+
+.signup-subhead{
+  font-size: 130%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.step{
+  font-size: 85%;
+}
+
+.child{
+  width: 50%;
+  float: left;
+}
+/* .form{
+  float: right;
+  margin-top: 10%;
+  width:50%;
+  background-color: gainsboro;
+}  */
